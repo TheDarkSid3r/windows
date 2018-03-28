@@ -1,0 +1,14 @@
+<html>
+<body>
+<p>Window 1</p>
+<button onclick="openNextWindow()">Open Window 2</button>
+
+<script>
+function openNextWindow() {
+    window.open("/window2.html", "_blank", "width=400, height=400");
+    window.close();
+}
+</script>
+
+</body>
+</html>

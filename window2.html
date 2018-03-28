@@ -2,8 +2,12 @@
 <body>
 <p>Window 2</p>
 <button onclick="openNextWindow()">Open Window 3</button>
+<button onclick="closeWindows()">Close window</button>
 
 <script>
+function closeWindow() {
+    window.close();
+}
 function openNextWindow() {
     window.open("/windows/window3.html", "_blank", "left=150, top=150, width=150, height=150");
 }

@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<button onclick="myFunction()">Open Window</button>
+<div id="square" style="width: 50px; height: 50px; background-color: #000000; position: fixed;"></div>
+
+<script>
+function myFunction() {
+    myWindow = window.open("", "", "width=200,height=100");
+    myFunction2();
+}
+function myFunction2() {
+    document.getElementById("square").style.left = myWindow.screenX - 400 + "px";
+    document.getElementById("square").style.top = myWindow.screenY - 200 + "px";
+    setTimeout(myFunction2, 10);
+}
+</script>
+
+</body>
+</html>

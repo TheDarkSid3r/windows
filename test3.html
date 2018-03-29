@@ -1,0 +1,79 @@
+<html>
+<body>
+
+<button id="openbtn" onclick="openWindow()" style="display: block;">Open Window</button>
+<button id="animbtn" onclick="animateWindow()" style="display: none;">Animate Window</button>
+<button id="closbtn" onclick="closeWindow()" style="display: none;">Close Window</button>
+
+<script>
+function openWindow() {
+    myWindow = window.open("", "", "width=200,height=150");
+    myWindow.resizeTo(200, 1);
+    document.getElementById("animbtn").style.display = "block";
+    document.getElementById("closbtn").style.display = "block";
+    document.getElementById("openbtn").style.display = "none";
+    myFunction2();
+}
+function closeWindow() {
+	myWindow.focus();
+    myWindow.close();
+    location.reload();
+}
+function animateWindow() { 
+  document.getElementById("animbtn").style.display = "none";
+  myWindow.focus();
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow2();
+    } else {
+      pos++; 
+      myWindow.moveBy(2, 0);
+    }
+  }
+}
+function animateWindow2() {  
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow3();
+    } else {
+      pos++; 
+      myWindow.moveBy(0, 2);
+    }
+  }
+}
+function animateWindow3() {  
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow4();
+    } else {
+      pos++; 
+      myWindow.moveBy(-2, 0);
+    }
+  }
+}
+function animateWindow4() {  
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow();
+    } else {
+      pos++; 
+      myWindow.moveBy(0, -2);
+    }
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 <html>
 <body>
 
@@ -7,11 +8,13 @@
 <script>
 function myFunction() {
     myWindow = window.open("", "", "width=200,height=100");
+    myWindow.document.write("<button onclick="window.close();">Close window</button>");
     myFunction2();
 }
 function myFunction2() {
-    document.getElementById("square").style.left = myWindow.screenX - 400 + "px";
+    document.getElementById("square").style.left = myWindow.screenX + 200 + "px";
     document.getElementById("square").style.top = myWindow.screenY - 200 + "px";
+    myWindow.focus();
     setTimeout(myFunction2, 10);
 }
 </script>

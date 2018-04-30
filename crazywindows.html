@@ -1,13 +1,14 @@
 <html>
 <body>
 
-<button id="openbtn" onclick="openWindow()" style="display: block;">CLICK A ME</button>
+<button id="openbtn" onclick="openWindow()" style="display: block;">CLICK ME</button>
 
 <script>
 function openWindow() {
     myWindow = window.open("", "", "width=200,height=150");
     myWindow.resizeTo(200, 1);
-    document.getElementById("openbtn").style.display = "none";
+    document.getElementById("openbtn").innerHTML = "CLICK ME AGAIN";
+    document.getElementById("openbtn").onclick = "animateWindow()";
     animateWindow();
 }
 function animateWindow() { 

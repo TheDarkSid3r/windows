@@ -1,5 +1,6 @@
 <script>
     animateWindow();
+    windowOpened = 1;
 function animateWindow() { 
   this.focus();
   var pos = 0;
@@ -47,7 +48,9 @@ function animateWindow4() {
     if (pos == 175) {
       clearInterval(id);
       animateWindow();
+        if (windowOpened == 1) {
         newWindow();
+        }
     } else {
       pos++; 
       this.moveBy(0, -2);
@@ -55,6 +58,7 @@ function animateWindow4() {
   }
 }
 function newWindow() {
+    windowOpened = 0;
     window.open("/windows/crazywindow2.html", "", "width=200,height=150");
     }
 </script>

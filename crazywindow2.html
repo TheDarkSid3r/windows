@@ -47,12 +47,14 @@ function animateWindow4() {
     if (pos == 175) {
       clearInterval(id);
       animateWindow();
-        window.open("/windows/crazywindow2.html", "", "width=200,height=150");
+        newWindow();
     } else {
       pos++; 
       this.moveBy(0, -2);
     }
   }
 }
-    
+function newWindow(); {
+    window.open("/windows/crazywindow2.html", "", "width=200,height=150");
+    }
 </script>

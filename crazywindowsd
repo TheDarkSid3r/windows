@@ -1,0 +1,11 @@
+<html>
+<body>
+
+<script>
+    myWindow = window.open("/windows/crazywindow.html", "", "width=200,height=150");
+    myWindow.resizeTo(200, 1);
+    location.reload
+</script>
+
+</body>
+</html>

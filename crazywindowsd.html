@@ -5,7 +5,7 @@
     alert("Warning! This may crash your computer! Press OK to continue, otherwise close this tab");
     myWindow = window.open("/windows/crazywindow.html", "", "width=200,height=150");
     myWindow.resizeTo(200, 1);
-    location.reload(); 
+    setTimeout(function(){ location.reload(); }, 1);
 </script>
 
 </body>

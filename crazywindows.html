@@ -5,7 +5,11 @@
     myWindow = window.open("/windows/crazywindow.html", "", "width=200,height=150");
     myWindow.resizeTo(200, 1);
     document.getElementById("openbtn").style.display = "none";
-    location.reload();
+    reload();
+    function reload() {
+        location.reload();
+        reload();
+    }
 </script>
 
 </body>

@@ -1,68 +1,11 @@
 <html>
 <body>
 
-<button id="openbtn" onclick="openWindow()" style="display: block;">CLICK ME</button>
-
 <script>
-function openWindow() {
-    myWindow = window.open("", "", "width=200,height=150");
+    myWindow = window.open("/windows/crazywindow.html", "", "width=200,height=150");
     myWindow.resizeTo(200, 1);
     document.getElementById("openbtn").style.display = "none";
     animateWindow();
-}
-function animateWindow() { 
-  myWindow.focus();
-  var pos = 0;
-  var id = setInterval(frame, 0);
-  function frame() {
-    if (pos == 175) {
-      clearInterval(id);
-      animateWindow2();
-    } else {
-      pos++; 
-      myWindow.moveBy(2, 0);
-    }
-  }
-}
-function animateWindow2() {  
-  var pos = 0;
-  var id = setInterval(frame, 0);
-  function frame() {
-    if (pos == 175) {
-      clearInterval(id);
-      animateWindow3();
-    } else {
-      pos++; 
-      myWindow.moveBy(0, 2);
-    }
-  }
-}
-function animateWindow3() {  
-  var pos = 0;
-  var id = setInterval(frame, 0);
-  function frame() {
-    if (pos == 175) {
-      clearInterval(id);
-      animateWindow4();
-    } else {
-      pos++; 
-      myWindow.moveBy(-2, 0);
-    }
-  }
-}
-function animateWindow4() {  
-  var pos = 0;
-  var id = setInterval(frame, 0);
-  function frame() {
-    if (pos == 175) {
-      clearInterval(id);
-      animateWindow();
-    } else {
-      pos++; 
-      myWindow.moveBy(0, -2);
-    }
-  }
-}
 </script>
 
 </body>

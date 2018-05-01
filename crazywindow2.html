@@ -1,4 +1,58 @@
 <script>
-setTimeout(function(){ myWindow = window.open("/windows/crazywindow2.html", "", "width=200,height=150");
-    myWindow.resizeTo(200, 1); }, 2000);
-    <script>
+    animateWindow();
+function animateWindow() { 
+  this.focus();
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow2();
+    } else {
+      pos++; 
+      this.moveBy(2, 0);
+    }
+  }
+}
+function animateWindow2() {  
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow3();
+    } else {
+      pos++; 
+      this.moveBy(0, 2);
+    }
+  }
+}
+function animateWindow3() {  
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow4();
+    } else {
+      pos++; 
+      this.moveBy(-2, 0);
+    }
+  }
+}
+function animateWindow4() {  
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow();
+    } else {
+      pos++; 
+      this.moveBy(0, -2);
+        window.open("/windows/crazywindow2.html", "", "width=200,height=150");
+    }
+  }
+}
+    
+</script>

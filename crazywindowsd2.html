@@ -1,11 +1,13 @@
 <html>
 <body>
     <audio autoplay loop><source src="crazywindowsa.mp3" type="audio/mpeg"></audio>
-    <h1> I really hope you dint do this... If you do want to, allow popups and reload the page <h1>
+    <h1> I really hope you don't do this... If you do want to, allow popups and reload the page <h1>
 <script>
+    windowNumber = null;
     myWindow = window.open("/windows/crazywindowsd2.html", "", "width=200,height=150");
     myWindow.resizeTo(200, 1);
      animateWindow();
+    myWindow.windowNumber = windowNumber + 1;
 function animateWindow() { 
   this.focus();
   var pos = 0;

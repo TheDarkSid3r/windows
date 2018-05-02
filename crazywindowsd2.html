@@ -4,6 +4,60 @@
 <script>
     myWindow = window.open("/windows/crazywindowsd2.html", "", "width=200,height=150");
     myWindow.resizeTo(200, 1);
+     animateWindow();
+function animateWindow() { 
+  this.focus();
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow2();
+    } else {
+      pos++; 
+      this.moveBy(2, 0);
+    }
+  }
+}
+function animateWindow2() {  
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow3();
+    } else {
+      pos++; 
+      this.moveBy(0, 2);
+    }
+  }
+}
+function animateWindow3() {  
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow4();
+    } else {
+      pos++; 
+      this.moveBy(-2, 0);
+    }
+  }
+}
+function animateWindow4() {  
+  var pos = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (pos == 175) {
+      clearInterval(id);
+      animateWindow();
+    } else {
+      pos++; 
+      this.moveBy(0, -2);
+    }
+  }
+}
     setTimeout(function(){ location.reload(); }, 1);
 </script>
 

@@ -1,6 +1,8 @@
-    <script>
+<h1 id=wNumb>0</h1>
+<script>
     animateWindow();
     windowOpened = 1;
+    document.getElementById("wNumb").innerHTML = windowNumber;
 function animateWindow() { 
   this.focus();
   var pos = 0;
@@ -61,5 +63,6 @@ function newWindow() {
     windowOpened = 0;
     myWindow = window.open("/windows/crazywindow2.html", "", "width=200,height=150");
     myWindow.moveTo(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500));
+    myWindow.windowNumber = windowNumber + 1;
     }
 </script>

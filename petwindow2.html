@@ -3,17 +3,18 @@
 </center>
 <script>
     animateWindow();
-function animateWindow() { 
+function animateWindow() {
+    p1 = (Math.floor(Math.random() * 1000)
   this.focus();
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == (Math.floor(Math.random() * 1000)) {
+    if (pos == p1) {
       clearInterval(id);
       animateWindow2();
     } else {
       pos++; 
-      this.moveBy((Math.floor(Math.random() * 4), 0);
+      this.moveBy(1, 0);
     }
   }
 }
@@ -21,12 +22,12 @@ function animateWindow2() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == (Math.floor(Math.random() * 1000)) {
+    if (pos == p1) {
       clearInterval(id);
       animateWindow3();
     } else {
       pos++; 
-      this.moveBy(0, (Math.floor(Math.random() * 4));
+      this.moveBy(0, 4);
     }
   }
 }
@@ -34,12 +35,12 @@ function animateWindow3() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == (Math.floor(Math.random() * 1000)) {
+    if (pos == p1) {
       clearInterval(id);
       animateWindow4();
     } else {
       pos++; 
-      this.moveBy(-(Math.floor(Math.random() * 4), 0);
+      this.moveBy(-2, 0);
     }
   }
 }
@@ -47,12 +48,12 @@ function animateWindow4() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == (Math.floor(Math.random() * 1000)) {
+    if (pos == p1) {
       clearInterval(id);
       animateWindow();
     } else {
       pos++; 
-      this.moveBy(0, -(Math.floor(Math.random() * 4));
+      this.moveBy(0, -2);
     }
   }
 }

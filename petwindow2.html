@@ -8,12 +8,12 @@ function animateWindow() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == 175) {
+    if (pos == (Math.floor(Math.random() * 1000)) {
       clearInterval(id);
       animateWindow2();
     } else {
       pos++; 
-      this.moveBy(2, 0);
+      this.moveBy((Math.floor(Math.random() * 4), 0);
     }
   }
 }
@@ -21,12 +21,12 @@ function animateWindow2() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == 175) {
+    if (pos == (Math.floor(Math.random() * 1000)) {
       clearInterval(id);
       animateWindow3();
     } else {
       pos++; 
-      this.moveBy(0, 2);
+      this.moveBy(0, (Math.floor(Math.random() * 4));
     }
   }
 }
@@ -34,12 +34,12 @@ function animateWindow3() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == 175) {
+    if (pos == (Math.floor(Math.random() * 1000)) {
       clearInterval(id);
       animateWindow4();
     } else {
       pos++; 
-      this.moveBy(-2, 0);
+      this.moveBy(-(Math.floor(Math.random() * 4), 0);
     }
   }
 }
@@ -47,12 +47,12 @@ function animateWindow4() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == 175) {
+    if (pos == (Math.floor(Math.random() * 1000)) {
       clearInterval(id);
       animateWindow();
     } else {
       pos++; 
-      this.moveBy(0, -2);
+      this.moveBy(0, -(Math.floor(Math.random() * 4));
     }
   }
 }

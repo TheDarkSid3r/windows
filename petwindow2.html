@@ -4,12 +4,11 @@
 <script>
     animateWindow();
 function animateWindow() {
-    p1 = (Math.floor(Math.random() * 1000)
   this.focus();
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == p1) {
+    if (pos == 1000) {
       clearInterval(id);
       animateWindow2();
     } else {
@@ -22,7 +21,7 @@ function animateWindow2() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == p1) {
+    if (pos == 1000) {
       clearInterval(id);
       animateWindow3();
     } else {
@@ -35,7 +34,7 @@ function animateWindow3() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == p1) {
+    if (pos == 1000) {
       clearInterval(id);
       animateWindow4();
     } else {
@@ -48,7 +47,7 @@ function animateWindow4() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == p1) {
+    if (pos == 1000) {
       clearInterval(id);
       animateWindow();
     } else {

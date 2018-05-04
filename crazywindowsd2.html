@@ -1,3 +1,4 @@
+<!-- Made by (C) Meowcat285 2018 -->
 <html>
 <body>
     <audio autoplay loop><source src="crazywindowsa.mp3" type="audio/mpeg"></audio>
@@ -9,7 +10,7 @@
      animateWindow();
     myWindow.windowNumber = windowNumber + 1;
     document.getElementById('wNumb').innerHTML = windowNumber + " - I really hope you don't do this... If you do want to, allow popups and reload the page ";
-function animateWindow() { 
+function animateWindow() {
   this.focus();
   var pos = 0;
   var id = setInterval(frame, 0);
@@ -18,12 +19,12 @@ function animateWindow() {
       clearInterval(id);
       animateWindow2();
     } else {
-      pos++; 
+      pos++;
       this.moveBy(2, 0);
     }
   }
 }
-function animateWindow2() {  
+function animateWindow2() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
@@ -31,12 +32,12 @@ function animateWindow2() {
       clearInterval(id);
       animateWindow3();
     } else {
-      pos++; 
+      pos++;
       this.moveBy(0, 2);
     }
   }
 }
-function animateWindow3() {  
+function animateWindow3() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
@@ -44,12 +45,12 @@ function animateWindow3() {
       clearInterval(id);
       animateWindow4();
     } else {
-      pos++; 
+      pos++;
       this.moveBy(-2, 0);
     }
   }
 }
-function animateWindow4() {  
+function animateWindow4() {
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
@@ -57,7 +58,7 @@ function animateWindow4() {
       clearInterval(id);
       animateWindow();
     } else {
-      pos++; 
+      pos++;
       this.moveBy(0, -2);
     }
   }

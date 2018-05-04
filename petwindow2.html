@@ -5,57 +5,65 @@
 </center>
 </body>
 <script>
-    animateWindow();
+    setTimeout(animateWindow(), Math.floor(Math.random() * 1000));
 function animateWindow() {
+  var picnumber = Math.floor(Math.random() * 300) + 100;
+  var picnumber2 = Math.floor(Math.random() * 1) + 1;
   this.focus();
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == 250) {
+    if (pos == picnumber) {
       clearInterval(id);
-      animateWindow2();
+      setTimeout(animateWindow2(), Math.floor(Math.random() * 10000));
     } else {
       pos++; 
-      this.moveBy(2, 0);
+      this.moveBy(picnumber2, 0);
     }
   }
 }
 function animateWindow2() {  
+  var picnumber = Math.floor(Math.random() * 300) + 100;
+  var picnumber2 = Math.floor(Math.random() * 1) + 1;
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == 190) {
+    if (pos == picnumber) {
       clearInterval(id);
-      animateWindow3();
+      setTimeout(animateWindow3(), Math.floor(Math.random() * 10000));
     } else {
       pos++; 
-      this.moveBy(0, 2);
+      this.moveBy(0, picnumber2);
     }
   }
 }
 function animateWindow3() {  
+  var picnumber = Math.floor(Math.random() * 300) + 100;
+  var picnumber2 = Math.floor(Math.random() * 1) + 1;
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == 250) {
+    if (pos == picnumber) {
       clearInterval(id);
-      animateWindow4();
+      setTimeout(animateWindow4(), Math.floor(Math.random() * 10000));
     } else {
       pos++; 
-      this.moveBy(-2, 0);
+      this.moveBy(-picnumber2, 0);
     }
   }
 }
 function animateWindow4() {  
+  var picnumber = Math.floor(Math.random() * 300) + 100;
+  var picnumber2 = Math.floor(Math.random() * 1) + 1;
   var pos = 0;
   var id = setInterval(frame, 0);
   function frame() {
-    if (pos == 190) {
+    if (pos == picnumber) {
       clearInterval(id);
-      animateWindow();
+      setTimeout(animateWindow(), Math.floor(Math.random() * 10000));
     } else {
       pos++; 
-      this.moveBy(0, -2);
+      this.moveBy(0, -picnumber2);
     }
   }
 }

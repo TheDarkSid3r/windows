@@ -1,4 +1,4 @@
 # windows
-<a href="/windows/crazywindowsd">
+<a href="https://mathfront.org/windows/crazywindowsd">
 HAHAHHAAGAGHHAHAHHAHAHHAHAHAHAHAHAH
 </a>

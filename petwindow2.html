@@ -5,7 +5,7 @@
 </center>
 </body>
 <script>
-    setTimeout(function() {animateWindow();}, Math.floor(Math.random() * 10000));
+    document.body.onload = function(){animateWindow();};
 function animateWindow() {
   var picnumber = Math.floor(Math.random() * 300) + 100;
   var picnumber2 = Math.floor(Math.random() * 1) + 1;
@@ -16,7 +16,7 @@ function animateWindow() {
   function frame() {
     if (pos == picnumber) {
       clearInterval(id);
-      setTimeout(function() {animateWindow2();}, Math.floor(Math.random() * 10000));
+      animateWindow2();
     } else {
       pos++; 
       this.moveBy(picnumber2, 0);
@@ -32,7 +32,7 @@ function animateWindow2() {
   function frame() {
     if (pos == picnumber) {
       clearInterval(id);
-      setTimeout(function() {animateWindow3();}, Math.floor(Math.random() * 10000));
+      animateWindow3();
     } else {
       pos++; 
       this.moveBy(0, picnumber2);
@@ -48,7 +48,7 @@ function animateWindow3() {
   function frame() {
     if (pos == picnumber) {
       clearInterval(id);
-      setTimeout(function() {animateWindow4();}, Math.floor(Math.random() * 10000));
+      animateWindow4();
     } else {
       pos++; 
       this.moveBy(-picnumber2, 0);
@@ -64,7 +64,7 @@ function animateWindow4() {
   function frame() {
     if (pos == picnumber) {
       clearInterval(id);
-      setTimeout(function() {animateWindow();}, Math.floor(Math.random() * 10000));
+      animateWindow();
     } else {
       pos++; 
       this.moveBy(0, -picnumber2);
